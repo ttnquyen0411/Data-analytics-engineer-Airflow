@@ -1,0 +1,14 @@
+data_warehouse_analytics_engineer:
+  outputs:
+    dev:
+      dataset: bigquery_example_dbt
+      job_execution_timeout_seconds: 600
+      job_retries: 1
+      location: US
+      method: service-account
+      priority: interactive
+      project: data-analytics-engineer
+      threads: 1
+      type: bigquery
+      keyfile: /opt/airflow/credentials/data-analytics-engineer-d7e247899ebd.json
+  target: dev

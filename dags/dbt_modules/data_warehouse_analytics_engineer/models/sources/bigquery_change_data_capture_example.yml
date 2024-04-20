@@ -1,0 +1,14 @@
+version: 2
+
+sources:
+  - name: bigquery_change_data_capture_example
+    description: Dataset contains table migrated from sources
+    schema: bigquery_change_data_capture_example
+
+    tables:
+      - name: order_items_delta
+        identifier: order_items_delta
+      - name: products_delta
+        identifier: products_delta
+      - name: products_main
+        identifier: products_main
